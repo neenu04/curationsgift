@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f2;
+  margin: 0;
+  padding: 0;
+  color: #4a3c38;
+  text-align: center;
+}
+
+header {
+  background-color: #f6d3c1;
+  padding: 30px 20px;
+}
+
+header h1 {
+  color: #b66b5d;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1em;
+  margin: 10px 0 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.hamper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hamper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+}
+
+.hamper img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hamper h3 {
+  margin: 10px 0 5px;
+  color: #a15c48;
+}
+
+.hamper p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.cta {
+  margin: 30px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.cta a {
+  color: #b66b5d;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f6d3c1;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hamper {
+    width: 80%;
+  }
+}
